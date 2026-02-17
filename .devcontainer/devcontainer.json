@@ -1,0 +1,16 @@
+{
+    "name": "Angular Latest Dev Environment",
+    "dockerComposeFile": "../docker-compose.yml",
+    "service": "angular-dev",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Angular.ng-template",
+                "editorconfig.editorconfig",
+                "esbenp.prettier-vscode"
+            ]
+        }
+    },
+    "postCreateCommand": "npm install"
+}
