@@ -1,11 +1,23 @@
-import { Component, signal } from '@angular/core';
+import { Component, signal, inject } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-root',
   imports: [],
   templateUrl: './app.html',
-  styleUrl: './app.css'
+  styleUrls: ['./app.css']
 })
 export class App {
   protected readonly title = signal('todo');
+  private http = inject(HttpClient);
+
+  sendData() {
+    const body = { message: 'Hello Angular 21' };
+
+    this.http.post<any>('/posts', body)
+      .subscribe({
+        next: (response: any) => console.log('完了:', response),   // ← 型注釈を追加
+        error: (err: any) => console.error('失敗:', err)         // ← こちらも
+      });
+  }
 }

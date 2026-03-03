@@ -1,0 +1,15 @@
+{
+  "posts": [
+    {
+      "id": "1",
+      "message": "Hello from json-server!",
+      "timestamp": "2026-03-03T00:00:00Z",
+      "status": "success"
+    },
+    {
+      "id": "8a50",
+      "message": "Hello Angular 21"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
