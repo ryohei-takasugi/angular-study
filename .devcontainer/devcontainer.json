@@ -2,7 +2,7 @@
     "name": "Angular Latest Dev Environment",
     "dockerComposeFile": "../docker-compose.yml",
     "service": "angular-dev",
-    "workspaceFolder": "/workspace",
+    "workspaceFolder": "/workspaces",
     "customizations": {
         "vscode": {
             "extensions": [
