@@ -1,9 +1,10 @@
 import { Component, signal, inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+import { SharedButtonComponent } from 'buttons';
 
 @Component({
   selector: 'app-root',
-  imports: [],
+  imports: [SharedButtonComponent],
   templateUrl: './app.html',
   styleUrls: ['./app.css']
 })
